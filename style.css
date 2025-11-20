@@ -1,0 +1,135 @@
+/* -------------------- */
+/* RESET GLOBAL */
+/* -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* -------------------- */
+/* HEADER */
+/* -------------------- */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #151515;
+    border-bottom: 1px solid #333;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    border: 3px solid #81d4fa;
+}
+
+.profile-img:hover {
+    transform: scale(1.15);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #81d4fa;
+    margin-top: 8px;
+}
+
+/* -------------------- */
+/* NAVIGATION */
+/* -------------------- */
+nav ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #81d4fa;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+/* -------------------- */
+/* SECTIONS */
+/* -------------------- */
+main {
+    padding: 30px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border: 1px solid #2c2c2c;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #81d4fa;
+}
+
+/* -------------------- */
+/* PARCOURS */
+/* -------------------- */
+.job {
+    margin-bottom: 30px;
+}
+
+.job h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.job-desc {
+    font-size: 0.95em;
+    color: #bfbfbf;
+    margin-bottom: 10px;
+}
+
+.job ul {
+    list-style: none;
+}
+
+.job ul li {
+    margin-bottom: 6px;
+    padding-left: 10px;
+    border-left: 3px solid #81d4fa;
+}
+
+/* -------------------- */
+/* FOOTER */
+/* -------------------- */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #151515;
+    margin-top: 30px;
+}
