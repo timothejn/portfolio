@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - JAUNEAU Timothé</title>
-<link rel="stylesheet" href="style.css" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    <!-- Scroll Animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 
 <body>
@@ -22,8 +27,10 @@
             <ul>
                 <li><a href="#presentation">Présentation</a></li>
                 <li><a href="#passions">Passions</a></li>
-                <li><a href="#parcours">Parcours Professionnel</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#competences">Compétences</a></li> <!-- Nouvelle section -->
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#cv" class="download-btn">Télécharger CV</a></li>
             </ul>
         </nav>
     </header>
@@ -31,7 +38,7 @@
     <main>
 
         <!-- SECTION PRÉSENTATION -->
-        <section id="presentation" class="card">
+        <section id="presentation" class="card" data-aos="fade-up" data-aos-duration="1500">
             <h2>Présentation</h2>
             <p>
                 Je m'appelle <strong>JAUNEAU Timothé</strong>, étudiant passionné par la communication, 
@@ -43,22 +50,22 @@
             </p>
         </section>
 
-        <!-- SECTION PASSIONS -->
-        <section id="passions" class="card">
+        <!-- SECTION PASSIONS (Carrousel) -->
+        <section id="passions" class="card" data-aos="fade-up" data-aos-duration="1500">
             <h2>Mes Passions</h2>
-            <ul>
-                <li>🏈 Football Américain</li>
-                <li>🎬 Cinéma & Analyse de films</li>
-                <li>👬 Sorties entre amis</li>
-                <li>💻 Création digitale & design</li>
-            </ul>
+            <div class="carousel">
+                <div class="carousel-item">🏈 <strong>Football Américain</strong></div>
+                <div class="carousel-item">🎬 <strong>Cinéma & Analyse de films</strong></div>
+                <div class="carousel-item">👬 <strong>Sorties entre amis</strong></div>
+                <div class="carousel-item">💻 <strong>Création digitale & design</strong></div>
+            </div>
         </section>
 
         <!-- SECTION PARCOURS -->
-        <section id="parcours" class="card">
+        <section id="parcours" class="card" data-aos="fade-up" data-aos-duration="1500">
             <h2>Parcours Professionnel</h2>
 
-            <div class="job">
+            <div class="job" data-aos="fade-left" data-aos-duration="1500">
                 <h3>Rossignol – Alternance (1 an et demi)</h3>
                 <p class="job-desc"><strong>Présentation :</strong> Rossignol est une marque française emblématique spécialisée dans les équipements de sports d’hiver et de montagne.</p>
                 <ul>
@@ -69,7 +76,7 @@
                 </ul>
             </div>
 
-            <div class="job">
+            <div class="job" data-aos="fade-left" data-aos-duration="1500">
                 <h3>GPSEO – 3 ans</h3>
                 <p class="job-desc"><strong>Présentation :</strong> GPSEO est une communauté urbaine regroupant plusieurs communes des Yvelines, spécialisée dans l’aménagement du territoire.</p>
                 <ul>
@@ -80,7 +87,7 @@
                 </ul>
             </div>
 
-            <div class="job">
+            <div class="job" data-aos="fade-left" data-aos-duration="1500">
                 <h3>Nike – Stage</h3>
                 <p class="job-desc"><strong>Présentation :</strong> Nike est l’un des leaders mondiaux de l’équipement sportif.</p>
                 <ul>
@@ -90,7 +97,7 @@
                 </ul>
             </div>
 
-            <div class="job">
+            <div class="job" data-aos="fade-left" data-aos-duration="1500">
                 <h3>Citadium – Stage</h3>
                 <p class="job-desc"><strong>Présentation :</strong> Citadium est une enseigne spécialisée dans la mode urbaine et streetwear.</p>
                 <ul>
@@ -102,10 +109,56 @@
 
         </section>
 
+        <!-- SECTION COMPÉTENCES -->
+        <section id="competences" class="card" data-aos="fade-up" data-aos-duration="1500">
+            <h2>Mes Compétences</h2>
+
+            <div class="skills-container">
+
+                <!-- Soft Skills -->
+                <div class="skills-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>💬 Communication efficace</li>
+                        <li>🤝 Travail en équipe</li>
+                        <li>💡 Créativité et innovation</li>
+                        <li>⏳ Gestion du temps</li>
+                        <li>📊 Prise de décision stratégique</li>
+                    </ul>
+                </div>
+
+                <!-- Hard Skills -->
+                <div class="skills-category">
+                    <h3>Hard Skills</h3>
+                    <div class="skill-item">
+                        <label for="html">HTML</label>
+                        <progress id="html" value="85" max="100"></progress>
+                    </div>
+                    <div class="skill-item">
+                        <label for="css">CSS</label>
+                        <progress id="css" value="80" max="100"></progress>
+                    </div>
+                    <div class="skill-item">
+                        <label for="js">JavaScript</label>
+                        <progress id="js" value="70" max="100"></progress>
+                    </div>
+                    <div class="skill-item">
+                        <label for="seo">SEO</label>
+                        <progress id="seo" value="90" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- SECTION CONTACT -->
-        <section id="contact" class="card">
+        <section id="contact" class="card" data-aos="fade-up" data-aos-duration="1500">
             <h2>Contact</h2>
             <p>Email : <strong>timothe.jaudeau@email.com</strong></p>
+        </section>
+
+        <!-- CV Télécharger -->
+        <section id="cv">
+            <a href="CV_JAUNEAU_Timothe.pdf" download="CV_JAUNEAU_Timothe" class="download-btn">Télécharger mon CV</a>
         </section>
 
     </main>
@@ -114,5 +167,10 @@
         <p>&copy; 2025 – Portfolio de JAUNEAU Timothé</p>
     </footer>
 
+    <!-- AOS Library for Scroll Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
