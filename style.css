@@ -19,31 +19,32 @@ body {
 /* -------------------- */
 header {
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
     background: #151515;
     border-bottom: 1px solid #333;
 }
 
 .profile-img {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
     border: 3px solid #81d4fa;
 }
 
 .profile-img:hover {
-    transform: scale(1.15);
+    transform: scale(1.2);
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5em;
+    font-size: 2.8em;
     margin-top: 20px;
+    color: white;
 }
 
 .subtitle {
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: #81d4fa;
     margin-top: 8px;
 }
@@ -65,63 +66,69 @@ nav ul li a {
     text-decoration: none;
     color: #81d4fa;
     font-size: 1.2em;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
     color: white;
+    transform: scale(1.05);
 }
 
 /* -------------------- */
 /* SECTIONS */
 /* -------------------- */
 main {
-    padding: 30px;
+    padding: 40px 20px;
 }
 
 .card {
     background: #1a1a1a;
-    padding: 30px;
+    padding: 40px;
     margin-bottom: 30px;
     border-radius: 18px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
     border: 1px solid #2c2c2c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 35px rgba(0,0,0,0.6);
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.2em;
+    font-size: 2.4em;
     margin-bottom: 20px;
     color: #81d4fa;
 }
 
 /* -------------------- */
-/* PARCOURS */
+/* CARROUSEL PASSIONS */
 /* -------------------- */
-.job {
-    margin-bottom: 30px;
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 30px;
+    padding: 10px;
+    justify-content: center;
 }
 
-.job h3 {
-    font-size: 1.6em;
-    margin-bottom: 10px;
-    color: #ffffff;
+.carousel-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #81d4fa;
+    flex-shrink: 0;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
 
-.job-desc {
-    font-size: 0.95em;
-    color: #bfbfbf;
-    margin-bottom: 10px;
-}
-
-.job ul {
-    list-style: none;
-}
-
-.job ul li {
-    margin-bottom: 6px;
-    padding-left: 10px;
-    border-left: 3px solid #81d4fa;
+.carousel-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 /* -------------------- */
@@ -132,4 +139,25 @@ footer {
     padding: 20px 0;
     background: #151515;
     margin-top: 30px;
+    color: #81d4fa;
+}
+
+/* -------------------- */
+/* BOUTON CV */
+/* -------------------- */
+.download-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #81d4fa;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #ff4081;
+    transform: scale(1.05);
 }
